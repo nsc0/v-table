@@ -8,18 +8,19 @@
         </template>
     </VTable>
     <div style="height:30px"></div>
-    <!-- <Table :tableData="tableData" :tableHead="tableHead" lineHeight="55px">
+    <Table :tableData="tableData" :tableHead="tableHead" lineHeight="55px">
         <template #address3="{ row }">
             <span>{{ row.address3 }}</span>
         </template>
         <template #opts="{ row }">
             <span>123123123</span>
         </template>
-    </Table> -->
+    </Table>
 </template>
 <script setup lang="ts">
-import VTable from '../packages/v-table/index.vue'
-import Table from '../packages/table/index.vue'
+import { Table, VTable } from '@nsc0/v-table'
+// import VTable from '../packages/v-table/index.vue'
+// import Table from '../packages/table/index.vue'
 import { onMounted, ref } from 'vue'
 import type { TableHead } from '../packages/types/index'
 
@@ -36,7 +37,7 @@ const tableHead = ref<TableHead[]>([
     // { label: '操作', prop: 'opts', fixed: 'right', width: '300px', slot: true },
 ])
 onMounted(() => {
-    for (let i = 0; i < 10089; i++) {
+    for (let i = 0; i < 68; i++) {
         tableData.value.push({
             id: i + 1,
             index: i + 1,

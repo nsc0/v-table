@@ -14,7 +14,11 @@
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
+  "main": "dist/v-table.js",
+  "module": "dist/v-table.mjs",
+  "types": "dist/index.d.ts",
   "dependencies": {
+    "@nsc0/v-table": "^0.0.1",
     "vue": "^3.2.38"
   },
   "devDependencies": {
@@ -32,6 +36,7 @@
     "sass": "^1.54.8",
     "typescript": "~4.7.4",
     "vite": "^3.0.9",
+    "vite-plugin-dts": "^1.4.1",
     "vue-tsc": "^0.40.7"
   }
 }

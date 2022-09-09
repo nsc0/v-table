@@ -2,6 +2,17 @@
 
 ## 虚拟化表格，万行数据不卡顿。以Vue3.2重构。
 ### 使用方式
+```
+npm install @nsc0/v-table
+```
+```typescript
+// 在main.ts中引入css
+import '@nsc0/v-table/style.css'
+```
+```typescript
+// 在需要使用的地方引入表格组件
+import { Table, VTable } from '@nsc0/v-table'
+```
 ```html
 <!-- 虚拟化表格 -->
 <VTable :tableData="tableData" :tableHead="tableHead" lineHeight="55px">

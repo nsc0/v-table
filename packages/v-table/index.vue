@@ -57,7 +57,7 @@
 <script lang="ts" setup>
 import { computed, defineProps, onMounted, reactive, ref, watch } from 'vue'
 import type { TableHead } from '../types/index'
-import { throttle } from '../utils/common'
+// import { throttle } from '../utils/common'
 // import VTableColumn from '../components/v-table-column.vue';
 const props = defineProps({
     height: String,
@@ -133,7 +133,7 @@ const reCalDomData = () => {
     blockTranslate.bottom = trueYTranslate + eachBlockHeight.value * 2 + 'px'
 }
 // block 可视改变
-const blockVisibleChange = (area: 'top' | 'middle' | 'bottom', isIntersecting) => {
+// const blockVisibleChange = (area: 'top' | 'middle' | 'bottom', isIntersecting) => {
     // if (scrollY.value === 0) return
     // if (isIntersecting) return
     // const nextTranslate = yUporDown.value ? -eachBlockHeight.value * 2 : eachBlockHeight.value * 3
@@ -157,7 +157,7 @@ const blockVisibleChange = (area: 'top' | 'middle' | 'bottom', isIntersecting) =
     //     domBlocks[nextArea[area]] = sliceArr
 
     // }
-}
+// }
 // 表格高度
 const calcHeight = computed(() => {
     return props.height || '300px'
